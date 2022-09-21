@@ -15,6 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: #03d6a13b;
+  color: #03d6a1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -129,7 +134,14 @@ a.dotted-link:hover {
 }
 
 .header .profile-image {
+  border-radius: 100%;
   margin-right: 30px;
+}
+
+.header .profile-image:hover{
+  transform: scale(1.075);
+  border-radius: 25px;
+  transition: transform .25s ease-in-out;
 }
 
 .header .profile-content .name {
@@ -162,7 +174,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: #03d6a1;
 }
 
 .header .profile-content .social a .svg-inline--fa {
@@ -230,6 +242,12 @@ a.dotted-link:hover {
 
 .latest .featured {
   margin-bottom: 60px;
+}
+
+.latest .featured .featured-image:hover{
+  transform: scale(1.020);
+    border-radius: 25px;
+    transition: transform .25s ease-in-out;
 }
 
 .latest .featured .title {
@@ -507,6 +525,10 @@ a.dotted-link:hover {
   padding-left: 25px;
 }
 
+.skill-list-item{
+  margin-bottom: 16px;
+}
+
 .education .item .university .year {
   color: #b0b7bf;
   font-weight: 500;
@@ -696,6 +718,7 @@ body[data-theme="dark"] .header .profile-content .social a {
 }
 
 body[data-theme="dark"] .header .profile-content .social a:hover {
+  background: #03d6a1;
   color: rgba(255, 255, 255, 0.9);
 }
 

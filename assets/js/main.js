@@ -6,6 +6,17 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+function copyEmail() {
+	var email = "gacokieric@gmail.com";
+	navigator.clipboard.writeText(email);
+	alert("✅  Email copied to clipboard");
+}
+
+function copyPhone() {
+	var email = "+254716965216";
+	navigator.clipboard.writeText(email);
+	alert("✅  Phone copied to clipboard");
+}
 
 /* Vanilla RSS - https://github.com/sdepold/vanilla-rss */
 
