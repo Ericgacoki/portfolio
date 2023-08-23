@@ -13,8 +13,8 @@ function copyEmail() {
 }
 
 function copyPhone() {
-	var email = "+254716965216";
-	navigator.clipboard.writeText(email);
+	var phone = "+254716965216";
+	navigator.clipboard.writeText(phone);
 	alert("✅  Phone copied to clipboard");
 }
 
